@@ -1,0 +1,58 @@
+{% extends "default.html.twig" %}
+
+{% block title %}register
+{% endblock %}
+
+{% block stylesheet %}
+<link href="/../public/css/register.css" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+{% include 'header.html.twig' %}
+{% endblock %}
+
+{% block body %}
+<div class="container-form">
+    <form class="form" action="/register" method="post">
+        <p class="title">Register </p>
+        <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+            <label>
+                <input required="" placeholder="" name="firstName" type="text" class="input">
+                <span>Firstname</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" name="lastName" type="text" class="input">
+                <span>Lastname</span>
+            </label>
+        </div>
+        <label>
+            <input required="" placeholder="" name="email" type="email" class="input">
+            <span>Email</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" name="userPassword" type="password" minlength="8" class="input" id="password">
+            <span class="password-label">Password</span>
+            <button type="button" id="togglePassword" class="toggle-password">Show</button>
+            <menu ul id="password-requirements">
+                <li id="length">At least 8 characters</li>
+                <li id="uppercase">At least one uppercase letter</li>
+                <li id="lowercase">At least one lowercase letter</li>
+                <li id="number">At least one number</li>
+            </menu ul>
+        </label>
+        <button class="submit" name="submit" type="submit">Submit</button>
+        <p class="signin">Already have an account ? <a href="/login">Signin</a> </p>
+    </form>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block scripts %}
+<script src="/../public/js/script.js"></script>
+<script src="/../public/js/password.js"></script>
+
+{% endblock %}

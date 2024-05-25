@@ -1,0 +1,39 @@
+{% extends "default.html.twig" %}
+
+{% block title %}login
+{% endblock %}
+
+{% block stylesheet %}
+<link href="/../public/css/login.css" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+{% include 'header.html.twig' %}
+{% endblock %}
+
+{% block body %}
+<div class="container-form">
+    <form class="form" action="/login" method="post">
+        <p class="title">login </p>
+        <p class="message">Signin now and get full access to our app. </p>
+        <label>
+            <input required="" placeholder="" name="email" type="email" class="input">
+            <span>Email</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" name="userPassword" type="password" minlength="8" class="input" id="password">
+            <span>Password</span>
+            <button type="button" id="togglePassword" class="toggle-password">Show</button>
+        </label>
+        <button class="submit" name="submit" type="submit">Submit</button>
+        <p class="signin">Don't have an account ? <a href="/register">Signup</a> </p>
+    </form>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block scripts %}
+<script src="/../public/js/script.js"></script>
+{% endblock %}
