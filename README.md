@@ -29,7 +29,10 @@ avec un header qui change en fonction de si l'utilisateur est connecter ou non.
         - docker-compose.yaml
         - .htaccess
     
-      https://github.com/lucasrebl/agarpyo/releases
+      https://github.com/lucasrebl/template-Login_Register_Header/releases
+
+      Attention le fichier .htaccess est nommé 'default.htaccess',
+      une fois télécharger renommé le juste '.htaccess' sinon cela ne fonctionnera pas.
 
   - Troisième étape: Ouvrer le projet dans un ide puis placé les 2 fichiers docker à la raçine du projet
 
