@@ -36,7 +36,7 @@ avec un header qui change en fonction de si l'utilisateur est connecter ou non.
 
   - Troisième étape: Ouvrer le projet dans un ide puis placé les 2 fichiers docker à la raçine du projet
 
-  - Quatrième étape: Éxecuter la commande suivant
+  - Quatrième étape: Lancer docker et éxecuter la commande suivant
     ```bash
     docker compose up -d --build
     ```
